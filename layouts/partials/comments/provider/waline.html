@@ -1,0 +1,51 @@
+<!-- Waline v3 CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+/>
+
+<div id="waline" class="waline-container"></div>
+
+<style>
+.waline-container {
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    padding: var(--card-padding);
+    --waline-font-size: var(--article-font-size);
+}
+.waline-container .wl-count {
+    color: var(--card-text-color-main);
+}
+</style>
+
+{{- with .Site.Params.comments.waline -}}
+{{- /* 构建配置对象 */ -}}
+{{- $config := dict "el" "#waline" "dark" `html[data-scheme="dark"]` -}}
+{{- $replaceKeys := dict
+    "serverurl" "serverURL"
+    "requiredmeta" "requiredMeta"
+    "wordlimit" "wordLimit"
+    "pagesize" "pageSize"
+    "imageuploader" "imageUploader"
+    "texrenderer" "texRenderer"
+    "turnstilekey" "turnstileKey"
+-}}
+
+{{- range $key, $val := . -}}
+    {{- if ne $val nil -}}
+        {{- $replaceKey := index $replaceKeys $key -}}
+        {{- $k := default $key $replaceKey -}}
+        {{- $config = merge $config (dict $k $val) -}}
+    {{- end -}}
+{{- end -}}
+
+<!-- Waline v3 ES Module 初始化 -->
+<script type="module">
+import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+const config = {{ $config | jsonify | safeJS }};
+
+init(config);
+</script>
+{{- end -}}

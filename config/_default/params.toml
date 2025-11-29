@@ -107,11 +107,11 @@ autoCreateIssue = false
 [comments.waline]
 serverURL = "https://comment.liaoke.xyz"
 lang = "zh-cn"
-visitor = ""
-avatar = ""
+#visitor = ""
+#avatar = ""
 emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-requiredMeta = ["name", "email", "url"]
-placeholder = ""
+#requiredMeta = ["name", "email", "url"]
+#placeholder = ""
 
 [comments.waline.locale]
 admin = "Admin"

@@ -46,6 +46,6 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4.7.4
               with:
                 branch: gh-pages
-                folder: 公共
+                folder: public
                 clean: true
                 single-commit: true

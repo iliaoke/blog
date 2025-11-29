@@ -1,7 +1,7 @@
 ---
 title: Hello World
 #description: Welcome to Hugo Theme Stack
-slug: hello-world
+#slug: hello-world
 date: 2022-03-06 00:00:00+0000
 image: cover.jpg
 categories:
@@ -18,21 +18,3 @@ For more information about this theme, check the documentation: https://stack.ji
 Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
 
 > Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
-
-<!-- Waline 评论区 -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-/>
-
-<div id="waline"></div>
-
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
-    el: '#waline',
-    serverURL: 'https://comment.liaoke.xyz',
-  });
-</script>
-

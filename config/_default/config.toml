@@ -15,7 +15,10 @@ hasCJKLanguage = false
 disqusShortname = "hugo-theme-stack"
 
 [pagination]
-pagerSize = 5
+pagerSize = 10
 
 [frontmatter]
 lastmod = ["lastmod" ,':fileModTime']
+
+[params]
+  timezone = "Asia/Shanghai"

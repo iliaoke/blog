@@ -32,8 +32,8 @@
             <div>
                 {{ partial "helper/icon" "date" }}
                 <time class="article-time--published" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-                    {{- .Date | time.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}&nbsp  
-                    {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+                    {{- .Date | time.Format (or .Site.Params.dateFormat.published "2006年01月02日") -}}&nbsp  
+                    {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated "2006年01月02日 15:04 MST" ) }}
                 </time>
             </div>
         {{ end }}

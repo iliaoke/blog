@@ -21,4 +21,4 @@ pagerSize = 10
 lastmod = ["lastmod" ,':fileModTime']
 
 [params]
-  timezone = "Asia/Shanghai"
+  timeZone = "Asia/Shanghai"

@@ -26,3 +26,11 @@ pagerSize = 10
   
 [params]
   timeZone = "Asia/Shanghai"
+
+
+
+[sitemap]
+  changeFreq = 'always'
+  filename = 'sitemap.xml'
+  priority = -1
+

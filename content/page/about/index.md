@@ -32,10 +32,12 @@ menu:
 3. 初步掌握Android系统(Lineageos,crdroid,risingos......)的编译(但是出bug了不会修),32+1tb的运存储存规模有点不太够用了(现在内存储存涨价太多，目前不适合入手)
 
 ### Windows/Linux
-1.了解各种系统uefi引导流程，熟悉构建多系统（windows/linux/fydeos/android x86）引导
-2.极其熟悉各系统软件生态
+
+1. 了解各种系统uefi引导流程，熟悉构建多系统（windows/linux/fydeos/android x86）引导
+2. 熟悉各系统各个领域的软件生态(用于生产或者技术类型的软件)
 
 ### 其他爱好
-1.喜欢看网络小说，不喜欢看传统文学。
-2.喜欢打steam游戏和网络游戏(杂食性玩家)
-3.喜欢白嫖cloudflare搭一些奇奇怪怪的东西。
+
+1. 喜欢看网络小说，不喜欢看传统文学。
+2. 喜欢打steam游戏和网络游戏(杂食性玩家)
+3. 喜欢白嫖cloudflare搭一些奇奇怪怪的东西。

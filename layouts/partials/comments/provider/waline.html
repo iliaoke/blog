@@ -21,7 +21,7 @@
 
 {{- with .Site.Params.comments.waline -}}
 {{- /* 构建配置对象 */ -}}
-{{- $config := dict "el" "#waline" "dark" `html[data-scheme="dark"]` -}}
+{{- $config := dict "el" "#waline" "pageview" true "dark" `html[data-scheme="dark"]` -}}
 {{- $replaceKeys := dict
     "serverurl" "serverURL"
     "requiredmeta" "requiredMeta"

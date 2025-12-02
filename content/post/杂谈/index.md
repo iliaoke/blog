@@ -1,5 +1,5 @@
 ---
-title: 杂谈
+title: 随记
 #description: Welcome to Hugo Theme Stack
 slug: talk
 date: 2025-12-02

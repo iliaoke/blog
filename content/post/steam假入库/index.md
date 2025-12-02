@@ -1,6 +1,7 @@
 ---
 title: 关于steam游戏假入库
-#description: Welcome to Hugo Theme Stack
+description: 关于steam假入库的一些研究
+keywords: ["steam", "假入库"]
 slug: steam
 date: 2025-12-03
 #image: cover.jpg

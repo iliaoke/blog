@@ -1,7 +1,7 @@
 ---
 title: 博客框架的选择
 #description: Welcome to Hugo Theme Stack
-slug: hello-world
+slug: blog choose
 date: 2025-12-02
 #image: cover.jpg
 categories:

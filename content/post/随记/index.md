@@ -15,8 +15,11 @@ weight: 1
 ### 2025.12.03
 
 11月12日 Google:我们将Android16 qpr1源代码开源
+
 12月2日 Lineageos:我们完成了Lineageos23.1对Android16 qpr1的适配
+
 12月3日 Google:我们将Android16 qpr2源代码开源
+
 随后Lineageos:Google！！！F**k you
 
 

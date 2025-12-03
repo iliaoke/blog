@@ -150,7 +150,7 @@ V2Ray 的增强版核心，由 XTLS 项目维护。
 - [Pandora-Box](https://github.com/snakem982/Pandora-Box) — 基于 Mihomo 内核,支持linux/windows/macos
 
 ### Android
-- [Clash Meta for Android](推荐)(https://github.com/MetaCubeX/ClashMetaForAndroid)
+- [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)(推荐)
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
 - [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos

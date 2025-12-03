@@ -115,7 +115,7 @@ V2Ray 的增强版核心，由 XTLS 项目维护。
 ### Windows
 - [v2rayN](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
 - [Clash Verge Rev](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo内核,支持 Linux/macOS/Windows
-- [Mihomo Party](https://github.com/mihomo-party-org/clash-party)  - 支持linux/windows/macos
+- [Mihomo Party](https://github.com/mihomo-party-org/clash-party)(推荐)  - 支持linux/windows/macos
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Sparkle](https://github.com/xishang0128/sparkle) — 基于 Mihomo 内核，支持 Windows / macOS / Linux
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
@@ -150,7 +150,7 @@ V2Ray 的增强版核心，由 XTLS 项目维护。
 - [Pandora-Box](https://github.com/snakem982/Pandora-Box) — 基于 Mihomo 内核,支持linux/windows/macos
 
 ### Android
-- [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)
+- [Clash Meta for Android](推荐)(https://github.com/MetaCubeX/ClashMetaForAndroid)
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
 - [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
@@ -168,7 +168,10 @@ V2Ray 的增强版核心，由 XTLS 项目维护。
 
 ### 路由器（OpenWRT / Linux）
 - [OpenClash](https://github.com/vernesong/OpenClash) - OpenWRT 上主流的 Clash 客户端
+- [OpenWrt-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki)(推荐) —  基于clash核心
 - [daed](https://github.com/daeuniverse/daed) — 基于dae内核
 - [Passwall2](https://github.com/xiaorouji/openwrt-passwall)
 - [openwrt-nekobox](https://github.com/Thaolga/openwrt-nekobox) — 基于 Sing-box核心
-- [OpenWrt-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki) —  基于clash核心
+
+## 总结
+ 小白无脑选择clash系客户端，有其他要求可自定义选择。

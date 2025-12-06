@@ -24,9 +24,36 @@ weight: 1
 ***
 ### 2025.05.02  
 也是给手机刷上windows了(第一次看见手机刷windows还是在初中,直想尝试，但当时手上没有适配了uefi的设备)  
-<video controls width="600">
-  <source src="1.mp4" type="video/mp4">
-</video>
+<style>
+  .video-player {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-player video {
+    width: 100%;
+    height: 350px;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .video-player {
+      max-width: 100%;
+      border-radius: 0;
+    }
+  }
+</style>
+<div class="video-player">
+  <video controls>
+    <source src="1.mp4" type="video/mp4">
+    您的浏览器不支持视频播放
+  </video>
+</div>
 
 ***
 ### 2025.07.05

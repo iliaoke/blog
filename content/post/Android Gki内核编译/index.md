@@ -81,7 +81,8 @@ https://github.com/tiann/KernelSU/discussions/952
 ## 刷入内核
 可以在twrp或一些用于刷写内核的app中刷入打包后的AnyKernel3.zip
 
-
+## 注意  
+**不同型号内核以及不同版本的编译器，可能对依赖和代码语法要求也有所不同，需要自行解决。**
 
 
 

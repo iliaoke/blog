@@ -1,7 +1,6 @@
 ---
 title: 代理工具的选择
 description: 代理工具的选择指南
-keywords: ["代理", "翻墙", "技术选型"]
 slug: proxy-tools
 date: 2025-12-03
 #image: cover.jpg

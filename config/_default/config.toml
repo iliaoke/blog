@@ -21,7 +21,7 @@ pagerSize = 10
 
 [frontmatter]
   date = [":filename", ":default"]
-  lastmod = ['lastmod',':fileModTime']
+  lastmod = ['lastmod','.git']
   publishDate = [":filename",":default"]
 
 [params]

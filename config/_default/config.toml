@@ -11,7 +11,6 @@ math = true
 defaultContentLanguage = "zh-cn"
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = true
 
 # Change it to your Disqus shortname before using
@@ -21,16 +20,14 @@ disqusShortname = "hugo-theme-stack"
 pagerSize = 10
 
 [frontmatter]
-  date = [':filename', ':default']
-  lastmod = [':git', 'lastmod'，'modified']
-  publishDate = [':filename', ':default']
-  
+  date        = [":filename", ":default"]
+  lastmod     = [":git", "lastmod", "modified"]
+  publishDate = [":filename", ":default"]
+
 [params]
   timeZone = "Asia/Shanghai"
 
-
 [sitemap]
-  changeFreq = 'always'
-  filename = 'sitemap.xml'
-  priority = -1
-
+  changeFreq = "always"
+  filename   = "sitemap.xml"
+  priority   = -1

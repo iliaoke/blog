@@ -20,8 +20,9 @@ disqusShortname = "hugo-theme-stack"
 pagerSize = 10
 
 [frontmatter]
-  date = [":filename", ":default"]
-  publishDate = [":filename",":default"]
+  lastmod: ['lastmod', ':git']
+  date = [':filename',':default']
+  publishDate = [':filename',':default']
 
 [params]
   timeZone = "Asia/Shanghai"

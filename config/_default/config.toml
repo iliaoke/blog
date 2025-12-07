@@ -21,8 +21,8 @@ pagerSize = 10
 
 [frontmatter]
   date = [":filename", ":default"]
-  lastmod = ['lastmod',':git',':fileModTime']
-  publishDate = [":filename",":default"]
+  lastmod = ["lastmod",":git",":fileModTime"]
+  publishDate = [":filename"，":default"]
 
 [params]
   timeZone = "Asia/Shanghai"

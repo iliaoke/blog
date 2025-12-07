@@ -1,0 +1,41 @@
+{{ define "main" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+
+{{ $list := slice }}
+{{ range $filtered }}
+    {{ $weight := or .Params.weight 9999 }}
+    {{ $ts := .Lastmod.Unix }}
+    {{ $rev := sub 9999999999 $ts }}
+    {{ $key := printf "%04d-%010d" $weight $rev }}
+    {{ $list = $list | append (dict "page" . "key" $key) }}
+{{ end }}
+
+{{ $sorted := sort $list "key" "asc" }}
+
+{{ $1 := slice }}
+{{ range $sorted }}
+  {{ $1 = $1 | append .page }}
+{{ end }}
+
+    {{ $pag := .Paginate $filtered }}
+
+    {{/* 计算当前页在自定义排序数组 $1 中的起止位置 */}}
+    {{ $start := mul (sub $pag.PageNumber 1) $pag.PagerSize }}
+    {{ $pageSlice := (after $start $1) }}
+    {{ $pageSlice = first $pag.PagerSize $pageSlice }}
+
+    <section class="article-list">
+        {{ range $pageSlice }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

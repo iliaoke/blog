@@ -35,7 +35,7 @@ Clash 是一个最初由 Go 编写的多协议代理核心（原项目已删除�
 - 新协议支持较慢（如 Reality、Hysteria2 等）
 
 
-## [Mihomo（Clash Meta）](https://github.com/MetaCubeX/mihomo)
+## [Mihomo（Clash Meta）](https://github.com/MetaCubeX/mihomo)★★★
 
 MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继承者。
 
@@ -45,7 +45,7 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 - 活跃维护，性能更高
 
 
-## [Sing-Box（sb）](https://github.com/SagerNet/sing-box)
+## [Sing-Box（sb）](https://github.com/SagerNet/sing-box)★★
 
 由 SagerNet 开发的现代化代理核心，目前增长最快、架构最先进。
 

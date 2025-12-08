@@ -1,6 +1,6 @@
 ---
-title: AI IDE工具分析
-description: AI IDE工具分析
+title: AI IDE工具分析推荐
+description: AI IDE工具分析推荐
 slug: ai-ide
 date: 2025-12-08
 #image: cover.jpg

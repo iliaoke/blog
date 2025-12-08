@@ -20,7 +20,7 @@ tags:
 
 以下是目前主流、最常见的核心介绍。
 
-## [Clash](https://github.com/Dreamacro/clash)
+## [Clash](https://github.com/Dreamacro/clash)(更新停滞)
 
 Clash 是一个最初由 Go 编写的多协议代理核心（原项目已删除）。  
 使用广泛，生态庞大。
@@ -60,7 +60,7 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 - GUI 生态较少
 
 
-## [V2Ray](https://github.com/v2fly/v2ray-core)
+## [V2Ray](https://github.com/v2fly/v2ray-core)(更新缓慢)
 
 由 v2fly 社区维护的原始 V2Ray 核心。
 
@@ -78,7 +78,7 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 
 ## [Xray](https://github.com/XTLS/Xray-core)
 
-V2Ray 的增强版核心，由 XTLS 项目维护。
+[V2Ray](https://github.com/v2fly/v2ray-core) 的增强版核心，由 XTLS 项目维护。
 
 **特点：**
 - 完全兼容 V2Ray 配置  

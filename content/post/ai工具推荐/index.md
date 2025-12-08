@@ -82,14 +82,26 @@ tags:
 
 - **[GitHub Copilot](https://github.com/features/copilot)**
   - VSCode 插件形式
+  - 适合片段式的文件
   - 上下文补全能力较弱
   - 无法全面定制化
+
+- **[Cline](https://github.com/cline/cline)（开源）**
+  - **可自定义任意服务商**
+  - VSCode 插件形式
+  - 适合片段式的文件
+  - 上下文补全能力较弱
+  - 无法全面定制化
+
 - **[Cursor](https://www.cursor.so/)**
   - 基于 VSCode 深度定制
   - 自研模型 Composer 1 (专为编程训练, 功能强大)
   - 预设 Prompt 优秀
   - 可使用其他服务商 API
-  - 输出质量高，但免费额度少，订阅贵
+  - 输出质量高，但免费额度少，订阅贵  
+
+- **[kiro](https://kiro.dev)**
+  电脑安装闪退，我用不了(哭)
 - **[Windsurf](https://windsurf.ai/)**
   - 基于 VSCode 深度定制
   - 自研模型 SWE-1.5 (专为编程训练, 功能强大)

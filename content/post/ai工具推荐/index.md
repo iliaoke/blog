@@ -107,5 +107,5 @@ tags:
 ## 总结推荐
 
 - 综合价格、模型能力和上下文补全能力，我个人首推 **Windsurf**
-- DeepWiki 和 CodeMap 是其最大亮点
+- DeepWiki 和 CodeMap 是其最大亮点,让其上下文补全能力非常强大
 - 其他 Ai IDE 在 UI 功能上同质化严重，差别主要在执行逻辑和预设 Prompt

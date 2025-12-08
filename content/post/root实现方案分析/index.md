@@ -27,7 +27,7 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 **注意：解锁 BL ≠ 必然 Root**，也可以只刷机不 Root。  
 主流 Root 方案按时间大致可以排成这样：
 
-> **KingRoot → SuperSU → Magisk → SKRoot（小众但典型） → KernelSU → APatch**
+> **KingRoot → SuperSU → Magisk → SKRoot（小众） → KernelSU → APatch**
 
 ---
 

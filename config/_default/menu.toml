@@ -8,8 +8,17 @@
 #newtab = true
 
 [[social]]
+identifier = "qq"
+weight = 8
+name = "QQ"
+url = "https://qm.qq.com/q/cIB4E2ldFC"
+
+[social.params]
+icon = "qq"
+
+[[social]]
 identifier = "github"
-weight = 1
+weight = 9
 name = "GitHub"
 url = "https://github.com/iliaoke"
 
@@ -19,28 +28,30 @@ icon = "brand-github"
 
 [[social]]
 identifier = "email"
-weight = 2
+weight = 99
 name = "Email"
 url = "mailto:liaoke2007@gmail.com"
 
 [social.params]
 icon = "mail"
 
+#[[social]]
+#identifier = "twitter"
+#weight = 9999
+#name = "Twitter"
+#url = "https://x.com/liaoke321"
+
+#[social.params]
+#icon = "brand-twitter"
+
 [[social]]
 identifier = "rss"
-weight = 3
+weight = 999999
 name = "Rss"
 url = "https://blog.liaoke.xyz/index.xml"
 
 [social.params]
 icon = "rss"
 
-#[[social]]
-#identifier = "twitter"
-#weight = 3
-#name = "Twitter"
-#url = "https://x.com/liaoke321"
 
-#[social.params]
-#icon = "brand-twitter"
 

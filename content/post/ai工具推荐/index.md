@@ -48,8 +48,8 @@ tags:
 - 不适合宏观项目管理
 - 适合单一功能的改进
 - 代表工具：
-  - [OpenAI Codex](https://openai.com/blog/openai-codex)
-  - [Claude Code](https://claude.com/product/claude-code)
+  - [OpenAI Codex](https://openai.com/blog/openai-codex)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
+  - [Claude Code](https://claude.com/product/claude-code)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
   - [OpenCode（开源）](https://github.com/sst/opencode)（可自定义服务商接口，但上下文能力较弱）
 
 ### 2. IDE AI 开发工具
@@ -123,3 +123,5 @@ tags:
 - 综合价格、模型能力和上下文补全能力，我个人首推 **[Windsurf](https://windsurf.ai/)**  
 - DeepWiki、CodeMap 和消息互通是其最大亮点，让其上下文补全能力非常强大  
 - 其他 AI IDE 在 UI 功能上同质化严重，差别主要在 AI 模型、执行逻辑和预设 Prompt
+- 如果不考虑开发效率，单论编码能力,openai的codex和claude code这种命令行式开发可能是最强的一批,其次就是cursor和windsurf
+

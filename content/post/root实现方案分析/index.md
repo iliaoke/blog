@@ -88,11 +88,11 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 SuperSU 很快失去优势。
 
 **定位**：  
-传统“改 system 注入 su”的代表，给后来的 systemless 方案打了基础。
+传统“改 system.img 注入 su”的代表
 
 ---
 
-## 3. Magisk：用户态 systemless Root 的时代
+## 3. [Magisk](https://github.com/topjohnwu/Magisk)：用户态 systemless Root 的时代
 
 Magisk 把 Root 方式拉到了一个新高度。
 
@@ -113,18 +113,19 @@ Magisk 把 Root 方式拉到了一个新高度。
   - 在不实际修改系统文件的情况下，实现对 `/system`、`/vendor` 等目录的文件覆盖
   - 极大提升“玩机模块生态”
 - **强兼容性**：
-  - 只要能改 boot.img，大多数内核版本都能使用
+  - 只要能改 boot.img中的init脚本，大多数内核版本都能使用
 - **依赖管理 App**（Magisk App）：
   - 管理模块、处理 su 授权弹窗、升级/卸载
 
 ### 3.3 局限
 
-- 纯用户态方案，对某些厂商的“深度内核安全定制”场景会遇到天花板  
-- 模块生态与内核态模块（如 KernelSU/APatch 的 KPM 等）相比，在**内核能力利用上**略逊一筹
+- 纯用户态方案，需要搭配app
+- 模块生态与内核态模块（如 APatch 的 KPM ）相比，在**内核能力利用上**略逊一筹
+- 不支持kernelsu后来的模块webui功能,需要额外安装app解决
 
 ---
 
-## 4. SKRoot：早期“内核 Root + su 环境注入”的探索者
+## 4. [SKRoot](https://github.com/abcz316/SKRoot-linuxKernelRoot)：早期“内核 Root + su 环境注入”的探索者
 
 - 时间上早于目前主流内核 Root（KernelSU / APatch）  
 - **无需内核源码**：
@@ -132,7 +133,7 @@ Magisk 把 Root 方式拉到了一个新高度。
   - 找到如 `do_execve` 等关键函数与 `task_struct/cred/seccomp` 的偏移
   - 插入自定义 shellcode 实现内核级提权
 - 号称“**隐藏性很强**”：
-  - 没有大张旗鼓的模块系统
+  - 没有模块系统
   - 常见用法是：针对**单个或少数进程**注入 su 环境
   - 通过 PATH / so 寄生等方式，让特定 APP 获得 su，而不是全局暴露
 - 适配范围：**大致 3.10 ~ 6.6 内核**
@@ -149,7 +150,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ---
 
-## 5. KernelSU：主流内核态 Root + overlayfs 模块
+## 5. [KernelSU](https://github.com/tiann/KernelSU)：主流内核态 Root + overlayfs 模块
 
 ### 5.1 基本定位
 
@@ -162,7 +163,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ### 5.2 技术路径演进
 
-- 早期：通过 **GKI 补丁 / 内核源码** 集成 KernelSU  
+- 早期：通过 **GKI 内核（已被官方淘汰） / 内核源码集成（已被官方淘汰）** 集成 KernelSU  
 - 现在主流：**LKM（ko 模块）方式**：
   - 把修改封装成内核模块加载进 GKI 内核
   - 对用户体验来说“不需要自己改源码”
@@ -186,11 +187,11 @@ Magisk 把 Root 方式拉到了一个新高度。
 - **限制**：
   - 对低版本 / 非 GKI 内核兼容性差  
   - 部分设备没有公开匹配的源码/配置，刷错容易变砖  
-  - 官方更推荐搭配 **5.10+ GKI 内核**
+  - 官方更推荐搭配 **5.10以上的 GKI 内核搭配ko模块使用**
 
 ---
 
-## 6. APatch：无需源码的 kpimg 内核 Root + KPM 模块
+## 6. [APatch](https://github.com/bmax121/APatch)：无需源码的 kpimg 内核 Root + KPM 模块
 
 在内核 Root 方案中，APatch 的技术路线是目前**最“工程化 + 通用”的一类**。
 
@@ -250,7 +251,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 - **KernelSU**：  
   适合有 **GKI / 新内核**，且希望在内核层面细控 Root 权限的人，  
   更偏“官方化”的内核模块方案，但对旧机型支持有限。
-
+  
 - **APatch**：  
   从技术理念上最“硬核”，不依赖源码、支持广泛内核版本，  
-  内核 hook + Lua 模块系统，对研究者 / 高级玩家非常友好。
+  内核模块 hook + Lua 模块系统，对研究者 / 高级玩家非常友好。

@@ -96,9 +96,8 @@ tags:
 - **[Cursor](https://www.cursor.so/)**
   - 基于 VSCode 深度定制
   - 自研模型 Composer 1 (专为编程训练, 功能强大)
-  - 预设 Prompt 优秀
   - 可使用其他服务商 API
-  - 输出质量高，但免费额度少，订阅贵  
+  - 预设 Prompt 优秀输出质量高，但免费额度少，订阅贵  
 
 - **[kiro](https://kiro.dev)**
   电脑安装闪退，我用不了(哭)

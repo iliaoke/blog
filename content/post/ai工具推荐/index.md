@@ -13,6 +13,7 @@ tags:
     - 推荐
 #weight: 1       
 ---
+
 # AI IDE 工具推荐
 
 ## 为什么使用 AI IDE？
@@ -47,9 +48,9 @@ tags:
 - 不适合宏观项目管理
 - 适合单一功能的改进
 - 代表工具：
-  - OpenAI Codex
-  - Claude Code
-  - 开源 OpenCode（可自定义服务商接口，但上下文能力较弱）
+  - [OpenAI Codex](https://openai.com/blog/openai-codex)
+  - [Claude Code](https://claude.com/product/claude-code)
+  - [OpenCode（开源）](https://github.com/sst/opencode)（可自定义服务商接口，但上下文能力较弱）
 
 ### 2. IDE AI 开发工具
 - 直接从文件管理器拖入文件即可
@@ -59,46 +60,47 @@ tags:
 
 ## 国内 AI IDE
 
-- **Trae**
-  - 特有 Solo 模式（和普通模式感觉主要是ui差别，在功能上感觉差的不是很大，可能隐藏prompt有所优化）
+- **[Trae](https://www.trae.ai/)**
+  - 特有 Solo 模式（和普通模式感觉主要是 UI 差别，在功能上感觉差的不是很大，可能隐藏 prompt 有所优化）
   - 可使用国内其他服务商接口
-- **Qoder**
+- **[Qoder](https://qoder.ai/)**
   - 无特色
   - 上下文消耗快
   - 无法使用国外模型或其他接口
-- **通义灵码**
+- **[通义灵码](https://lingma.aliyun.com/)**
   - 无特色
   - 无法使用国外模型或其他接口
 
 ### 国内 IDE 的共性
-- 喜欢构建工作区文件全量索引，每次提问前先查索引文件，消耗大量上下文 token ，有时查找的文件过多反而忽略关键问题
+- 喜欢构建工作区文件全量索引，每次提问前先查索引文件，消耗大量上下文 token，有时查找的文件过多反而忽略关键问题
 - 国内模型编码能力较弱，且不允许使用国外更强的模型
-- 方便支付订阅,界面中文支持较好
+- 方便支付订阅, 界面中文支持较好
 
 ---
 
 ## 国外 AI IDE
 
-- **GitHub Copilot**
+- **[GitHub Copilot](https://github.com/features/copilot)**
   - VSCode 插件形式
   - 上下文补全能力较弱
   - 无法全面定制化
-- **Cursor**
+- **[Cursor](https://www.cursor.so/)**
   - 基于 VSCode 深度定制
-  - 自研模型 Composer 1(专为编程训练,功能强大)
+  - 自研模型 Composer 1 (专为编程训练, 功能强大)
   - 预设 Prompt 优秀
   - 可使用其他服务商 API
   - 输出质量高，但免费额度少，订阅贵
-- **Windsurf**
+- **[Windsurf](https://windsurf.ai/)**
   - 基于 VSCode 深度定制
-  - 自研模型 SWE-1.5(专为编程训练,功能强大)
+  - 自研模型 SWE-1.5 (专为编程训练, 功能强大)
   - 亮眼功能：
-    - **DeepWiki**：定位项目中关键函数或变量，了解用途和引用
-    - **CodeMap**：适合大型项目索引，根据输入需求生成索引（不同于国内ide喜欢构建全量索引）
+    - **DeepWiki**：定位项目中关键函数或变量，了解用途和在项目其他地方引用 (方便学习他人的开源项目)
+    - **CodeMap**：适合大型项目索引，根据输入需求生成索引（不同于国内 IDE 喜欢构建全量索引, 适合研究大型项目）
+    - **对话消息互通**：不同对话之间可以选择互通消息，这对不同对话编写具有一定关联性的功能非常有用
   - 免费额度高，价格便宜
   - 支持其他服务商 API
 
-- **Zen Editor（开源）**
+- **[Zen Editor](https://zed.dev)（开源）**
   - 可使用任意服务商接口
   - 自带免费额度高
   - 上下文补全能力较弱
@@ -107,6 +109,6 @@ tags:
 
 ## 总结推荐
 
-- 综合价格、模型能力和上下文补全能力，我个人首推 **Windsurf**
-- DeepWiki 和 CodeMap 是其最大亮点,让其上下文补全能力非常强大
-- 其他 Ai IDE 在 UI 功能上同质化严重，差别主要在执行逻辑和预设 Prompt
+- 综合价格、模型能力和上下文补全能力，我个人首推 **[Windsurf](https://windsurf.ai/)**  
+- DeepWiki、CodeMap 和消息互通是其最大亮点，让其上下文补全能力非常强大  
+- 其他 AI IDE 在 UI 功能上同质化严重，差别主要在 AI 模型、执行逻辑和预设 Prompt

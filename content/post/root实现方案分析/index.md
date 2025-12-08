@@ -21,7 +21,7 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 一般来说，Root 需要先解锁 bootloader（BL），解锁的目的，是让用户有权限刷写各个分区，从而能：
 
 - 更换系统（system / vendor / product 等）
-- 更换内核（boot / vendor_boot）
+- 更换内核（boot ）
 - 注入 Root / 模块方案
 
 **注意：解锁 BL ≠ 必然 Root**，也可以只刷机不 Root。  

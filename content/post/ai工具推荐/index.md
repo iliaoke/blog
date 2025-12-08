@@ -48,8 +48,8 @@ tags:
 - 不适合宏观项目管理
 - 适合单一功能的改进
 - 代表工具：
-  - [OpenAI Codex](https://openai.com/blog/openai-codex)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
-  - [Claude Code](https://claude.com/product/claude-code)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
+  - [OpenAI Codex★★★](https://openai.com/blog/openai-codex)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
+  - [Claude Code★★★](https://claude.com/product/claude-code)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
   - [OpenCode（开源）](https://github.com/sst/opencode)（可自定义服务商接口，但上下文能力较弱）
 
 ### 2. IDE AI 开发工具
@@ -80,13 +80,13 @@ tags:
 
 ## 国外 AI IDE
 
-- **[GitHub Copilot](https://github.com/features/copilot)**
+- **[GitHub Copilot★★](https://github.com/features/copilot)**
   - VSCode 插件形式
   - 适合片段式的文件
   - 上下文补全能力较弱
   - 无法全面定制化
 
-- **[Cline](https://github.com/cline/cline)（开源）**
+- **[Cline★★](https://github.com/cline/cline)（开源）**
   - **可自定义任意服务商**
   - VSCode 插件形式
   - 适合片段式的文件
@@ -100,7 +100,7 @@ tags:
   - 上下文补全能力较弱
   - 无法全面定制化
 
-- **[Cursor](https://www.cursor.so/)**
+- **[Cursor★★★](https://www.cursor.so/)**
   - 基于 VSCode 深度定制
   - 自研模型 Composer 1 (专为编程训练, 功能强大)
   - 可使用规定的其他服务商 API
@@ -108,7 +108,7 @@ tags:
 
 - **[kiro](https://kiro.dev)**
   电脑安装闪退，我用不了(哭)
-- **[Windsurf](https://windsurf.ai/)**
+- **[Windsurf★★★](https://windsurf.ai/)**
   - 基于 VSCode 深度定制
   - 自研模型 SWE-1.5 (专为编程训练, 功能强大)
   - 亮眼功能：

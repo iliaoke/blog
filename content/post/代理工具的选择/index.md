@@ -108,19 +108,19 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 ## 各操作系统主流GUI代理客户端(整体按照知名度排序)
 
 ### Windows
-- [v2rayN](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
-- [Clash Verge Rev](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo内核,支持 Linux/macOS/Windows
-- [Mihomo Party](https://github.com/mihomo-party-org/clash-party)(推荐)  - 支持linux/windows/macos
+- [v2rayN★★](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
+- [Clash Verge Rev★★](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo内核,支持 Linux/macOS/Windows
+- [Mihomo Party★★★](https://github.com/mihomo-party-org/clash-party)(推荐)  - 支持linux/windows/macos
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
-- [Sparkle](https://github.com/xishang0128/sparkle) — 基于 Mihomo 内核，支持 Windows / macOS / Linux
+- [Sparkle★★](https://github.com/xishang0128/sparkle) — 基于 Mihomo 内核，支持 Windows / macOS / Linux
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
 - [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
 - [GUI.for.Clash](https://github.com/GUI-for-Cores/GUI.for.Clash) — Windows / macOS / Linux
 - [Pandora-Box](https://github.com/snakem982/Pandora-Box) — 基于 Mihomo 内核,支持linux/windows/macos
 
 ### macOS
-- [Surge](https://nssurge.com) — 付费高级客户端,支持ios/macos
-- [Quantumult X](https://apps.apple.com/us/app/quantumult-x/id1443988620) — 付费,支持ios/macos
+- [Surge★★★](https://nssurge.com) — 付费高级客户端,支持ios/macos
+- [Quantumult X★★★](https://apps.apple.com/us/app/quantumult-x/id1443988620) — 付费,支持ios/macos
 - [Loon](https://apps.apple.com/us/app/loon/id1373567447) —  付费,支持ios/macos
 - [v2rayN](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
 - [Clash Verge Rev](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo 内核,支持 Linux/macOS/Windows
@@ -130,13 +130,13 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 - [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
 - [GUI.for.Clash](https://github.com/GUI-for-Cores/GUI.for.Clash) — Windows / macOS / Linux
-- [Stash](https://stash.ws) — 基于 sing-box（付费）
+- [Stash★★](https://stash.ws) — 基于 sing-box（付费）
 - [Pandora-Box](https://github.com/snakem982/Pandora-Box) — 基于 Mihomo 内核,支持linux/windows/macos
 
 ### Linux
-- [v2rayN](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
-- [Clash Verge Rev](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo 内核,支持 Linux/macOS/Windows
-- [Mihomo Party](https://github.com/mihomo-party-org/clash-party)  - 支持linux/windows/macos
+- [v2rayN★★](https://github.com/2dust/v2rayN) — 支持 Xray / sing-box / clash/others 内核,支持Windows/Linux/macOS
+- [Clash Verge Rev★★](https://github.com/Clash-Verge-rev/clash-verge-rev) — 内置 Mihomo 内核,支持 Linux/macOS/Windows
+- [Mihomo Party★★★](https://github.com/mihomo-party-org/clash-party)  - 支持linux/windows/macos
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Sparkle](https://github.com/xishang0128/sparkle) — 基于 Mihomo 内核，支持 Windows / macOS / Linux
 - [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
@@ -145,15 +145,15 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 - [Pandora-Box](https://github.com/snakem982/Pandora-Box) — 基于 Mihomo 内核,支持linux/windows/macos
 
 ### Android
-- [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)(推荐)
+- [Clash Meta for Android★★★](https://github.com/MetaCubeX/ClashMetaForAndroid)(推荐)
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
-- [FlClash](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
+- [FlClash★★](https://github.com/chen08209/FlClash) — 基于 Mihomo 内核,支持Android/linux/windows、macos
 
 ### iOS
-- [Surge](https://nssurge.com) — 付费高级客户端,支持ios/macos
-- [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118) — 付费,支持多协议
-- [Quantumult X](https://apps.apple.com/us/app/quantumult-x/id1443988620) — 付费,支持ios/macos
+- [Surge★★★](https://nssurge.com) — 付费高级客户端,支持ios/macos
+- [Shadowrocket★★★](https://apps.apple.com/us/app/shadowrocket/id932747118) — 付费,支持多协议
+- [Quantumult X★★★](https://apps.apple.com/us/app/quantumult-x/id1443988620) — 付费,支持ios/macos
 - [Loon](https://apps.apple.com/us/app/loon/id1373567447) —  付费,支持ios/macos
 - [Karing](https://github.com/KaringX/karing) — 基于 sing-box 内核,支持Android/ios/linux/windows/macos
 - [Clash Mi](https://github.com/KaringX/clashmi) —支持android/ios/Windows / macOS / Linux
@@ -162,8 +162,8 @@ MetaCubeX 社区维护的 Clash 增强版，也是目前最主流的 Clash 继�
 - [ClashBox](https://github.com/xiaobaigroup/ClashBox) — 独苗这一块
 
 ### 路由器（OpenWRT / Linux）
-- [OpenClash](https://github.com/vernesong/OpenClash) - OpenWRT 上主流的 Clash 客户端
-- [OpenWrt-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki)(推荐) —  基于clash核心
+- [OpenClash★★](https://github.com/vernesong/OpenClash) - OpenWRT 上主流的 Clash 客户端
+- [OpenWrt-nikki★★★](https://github.com/nikkinikki-org/OpenWrt-nikki)(推荐) —  基于clash核心
 - [daed](https://github.com/daeuniverse/daed) — 基于dae内核
 - [Passwall2](https://github.com/xiaorouji/openwrt-passwall)
 - [openwrt-nekobox](https://github.com/Thaolga/openwrt-nekobox) — 基于 Sing-box核心

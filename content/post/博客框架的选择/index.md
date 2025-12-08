@@ -46,23 +46,23 @@ tags:
  3. 缺乏统一的后台管理功能
 
 ## 动态博客框架
-### [WordPress](https://wordpress.org/)  
+### [WordPress★★★](https://wordpress.org/)  
       世界知名动态博客框架，主题资源插件丰富，教程多。
 ### [Typecho](https://typecho.org/)  
      轻量级动态博客框架，主打一个快速部署，快速上线
-### [Halo](https://halo.run/)  
+### [Halo★★](https://halo.run/)  
      界面很漂亮，资源插件相对来说比较丰富，社区正在逐步发展，安装部署方法较为麻烦，比较吃服务器性能
 
 ## 静态博客框架
-### [Hexo](https://hexo.io/)  
+### [Hexo★★★](https://hexo.io/)  
      node.js开发,教程很多，社区插件主题资源丰富，缺点是当文章数量>1k时，构建速度会显著减缓
-### [Hugo](https://gohugo.io/)  
+### [Hugo★★★](https://gohugo.io/)  
      go语言开发,使用go template模板，学习门槛相对其他的来说高点。运行build效率很高,教程资源丰富,社区插件资源也很多，稍逊hexo,最大的优势是当文章数量很多时，构建静态网站的速度可以快其他框架几倍.
-### [Jekyll](https://jekyllrb.com/)  
+### [Jekyll★★](https://jekyllrb.com/)  
      资源插件相对较少,界面简洁直观,但有github官方支持,可以直接将存入仓库的md文件转换成网页
 ### [VitePress](https://vitepress.dev/)  
      资源插件丰富，可扩性强,常用于构建文档，不用于博客
-### [Astro](https://astro.build/)  
+### [Astro★★](https://astro.build/)  
     新一代静态框架,0 javascript的技术理念让网站首页加载起来非常快,采用服务端渲染的技术理念
     可局部初始化组件为spa,增强网站运行效率,可搭配其他前端框架组件使用，但主题资源相对较少。
 

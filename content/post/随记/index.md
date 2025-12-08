@@ -29,6 +29,9 @@ cloudflare ui界面更新了，感觉网站的寻找效率更高了
 12月3日 Google:我们将Android16 qpr2源代码开源  
 随后Lineageos:Google！！！F**k you
 ***
+### 2025.12.02  
+愈战愈败,愈败愈战,愈战愈败败败败败..........
+***
 ### 2025.05.02  
 也是给手机刷上windows了(第一次看见手机刷windows还是在初中,直想尝试，但当时手上没有适配了uefi的设备)  
 <style>

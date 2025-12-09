@@ -238,12 +238,12 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 | 方案      | 类型             | 是否改内核代码 | 是否需源码 | 是否依赖 App | su 角色                         | 模块系统            |
 |-----------|------------------|----------------|------------|--------------|----------------------------------|---------------------|
-| KingRoot  | 漏洞 Root        | 否             | 否         | 通常需要     | 各家自定义                      | 无 / 简单补丁       |
-| SuperSU   | system 注入 su   | 否             | 否         | 可选         | 传统 setuid su                  | 无                  |
+| KingRoot  | 漏洞 Root        | 否             | 否         | 需要     | 各家自定义                      | 无 / 简单补丁       |
+| SuperSU   | system 注入 su   | 否             | 否         | 可选        | 传统 setuid su                  | 无                  |
 | Magisk    | 用户态 Root      | 间接（不改内核）| 否        | 强依赖       | 中转到 `magiskd`                | magic mount         |
 | SKRoot    | 内核 Root        | 是（patch 镜像）| 否        | 有工具/库    | 隐藏 su + 进程定向注入          | 无完整模块系统      |
 | KernelSU  | 内核 Root        | 是（源码/GKI/LKM）| 依赖维护方 | App 非必须 | `/system/bin/su` 触发内核提权   | 元模块      |
-| APatch    | 内核 Root        | 是（kpimg patch）| 否       | App 强配合   | 内核 hook su/execve 等          | APM/KPM + Lua       |
+| APatch    | 内核 Root        | 是（kpimg patch）| 否       | App 非必须   | 内核 hook su/execve 等          | APM/KPM + Lua       |
 
 ## 2. 目前最主流的三款root方案分析
 

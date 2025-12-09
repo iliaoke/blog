@@ -104,7 +104,7 @@ tags:
   - 基于 VSCode 深度定制
   - 自研模型 Composer 1 (专为编程训练, 功能强大)
   - 可使用规定的其他服务商 API
-  - 可以直接连接github远程储存库(特色功能)
+  - agent可以直接连接github远程储存库(特色功能)
   - 预设 Prompt 优秀输出质量高，但免费额度少，订阅贵  
 
 - **[kiro](https://kiro.dev)**

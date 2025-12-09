@@ -31,9 +31,9 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 
 ---
 
-# 一、Root 实现思路：按技术路线分类
+## 一、Root 实现思路：按技术路线分类
 
-## 1. 用户态 Root（User-space Root）
+### 用户态 Root（User-space Root）
 
 - 不直接修改内核代码  
 - 修改 **boot.img → ramdisk → init 脚本**，在早期启动阶段插入自己的用户态 root 程序  
@@ -43,7 +43,7 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 - **优点**：对内核无强依赖，兼容面最广  
 - **缺点**：本质不在内核，某些内核安全策略/厂商定制下会有局限
 
-## 2. 内核态 Root（Kernel-space Root）
+### 内核态 Root（Kernel-space Root）
 
 - 直接在内核中 **Hook 权限相关函数 / LSM / syscall**  
 - 在内核层修改 `cred`、`capabilities` 等结构，获得最高权限  
@@ -52,7 +52,7 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 - **优点**：权限层级最高，可做更“隐蔽”和细粒度的控制  
 - **缺点**：与内核版本/厂商定制强相关，适配成本较高
 
-## 3. 漏洞 Root（Exploit-based Root）
+### 漏洞 Root（Exploit-based Root）
 
 - 利用系统或内核漏洞临时/半永久获取 Root  
 - 通常依赖特定 Android / 内核版本，系统一更新就失效  
@@ -62,9 +62,9 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 
 ---
 
-# 二、按时间线看典型方案
+## 二、按时间线看典型方案
 
-## 1. KingRoot：漏洞驱动的早期 Root
+### KingRoot：漏洞驱动的早期 Root
 
 - 主要活跃在 **Android 4.4 ~ 6.0** 时代  
 - 通过 **内核 / 系统漏洞**（如提权漏洞）获得 Root  
@@ -76,7 +76,7 @@ Android Root 顾名思义即给安卓系统获取根权限，让用户拥有系�
 
 ---
 
-## 2. SuperSU：system 分区注入 su 的经典方案
+### SuperSU：system 分区注入 su 的经典方案
 
 - 思路：直接修改 `system.img`，在 `/system/bin` 或 `/system/xbin` 注入 `su` 二进制  
 - 通过 `su` 的 setuid 机制实现提权  
@@ -92,11 +92,11 @@ SuperSU 很快失去优势。
 
 ---
 
-## 3. [Magisk](https://github.com/topjohnwu/Magisk)：用户态 systemless Root 的时代
+###  [Magisk](https://github.com/topjohnwu/Magisk)：用户态 systemless Root 的时代
 
 Magisk 把 Root 方式拉到了一个新高度。
 
-### 3.1 核心实现
+####  核心实现
 
 - 修改 **boot.img → ramdisk → init**：
   - 用 `magiskinit` 接管早期启动，作为“第一个用户态进程”
@@ -107,7 +107,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 - 不在 system 分区直接写入文件，做到 **systemless**  
   （实际上是用挂载/覆盖的方式“虚拟出”修改过的系统视图）
 
-### 3.2 关键特点
+#### 关键特点
 
 - **首创 magic mount 模块系统**：
   - 在不实际修改系统文件的情况下，实现对 `/system`、`/vendor` 等目录的文件覆盖
@@ -117,7 +117,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 - **依赖管理 App**（Magisk App）：
   - 管理模块、处理 su 授权弹窗、升级/卸载
 
-### 3.3 局限
+#### 局限
 
 - 纯用户态方案，需要搭配app
 - 模块生态与内核态模块（如 APatch 的 KPM ）相比，在**内核能力利用上**略逊一筹
@@ -125,7 +125,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ---
 
-## 4. [SKRoot](https://github.com/abcz316/SKRoot-linuxKernelRoot)：早期“内核 Root + su 环境注入”的探索者
+### [SKRoot](https://github.com/abcz316/SKRoot-linuxKernelRoot)：早期“内核 Root + su 环境注入”的探索者
 
 - 时间上早于目前主流内核 Root（KernelSU / APatch）  
 - **无需内核源码**：
@@ -150,9 +150,9 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ---
 
-## 5. [KernelSU](https://github.com/tiann/KernelSU)：主流内核态 Root + overlayfs 模块
+###  [KernelSU](https://github.com/tiann/KernelSU)：主流内核态 Root + overlayfs 模块
 
-### 5.1 基本定位
+####  基本定位
 
 - 代表性的 **内核态 Root**：
   - 在内核中安装 hook（LSM / cred 修改等）
@@ -161,7 +161,7 @@ Magisk 把 Root 方式拉到了一个新高度。
   - 它触发内核 hook  
   - 提权是在内核里完成的，而不是转发给某个守护进程（区别于 Magisk）
 
-### 5.2 技术路径演进
+####  技术路径演进
 
 - 早期：通过 **谷歌GKI 内核（已被官方淘汰） / 内核源码集成（已被官方淘汰）** 集成 KernelSU  
 - 现在主流：**LKM（ko 模块）方式**：
@@ -172,7 +172,7 @@ Magisk 把 Root 方式拉到了一个新高度。
   
   
 
-### 5.3 模块系统：元模块（支持overlyfs/magic mount或者自定义挂载方式）
+#### 模块系统：元模块（支持overlyfs/magic mount或者自定义挂载方式）
 
 - 默认使用 **overlayfs** 实现模块系统(首创)：
   - 支持对 `/system` 等只读分区做“上层覆盖”(模块安装后通常需要 **重启才能生效对/system的修改**)
@@ -180,7 +180,7 @@ Magisk 把 Root 方式拉到了一个新高度。
   - overlayfs 是内核特性，语义更标准
   - 但实时性稍差，多数变更需要重启
 
-### 5.4 特点与限制
+#### 特点与限制
 
 - **特点**：
   1. 内核态 su：安全模型清晰，可做细粒度 App profile（按 UID/GID 控制权限大小）  
@@ -193,11 +193,11 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ---
 
-## 6. [APatch](https://github.com/bmax121/APatch)：无需源码的 kpimg 内核 Root + KPM 模块
+### [APatch](https://github.com/bmax121/APatch)：无需源码的 kpimg 内核 Root + KPM 模块
 
 在内核 Root 方案中，APatch 的技术路线是目前**最“工程化 + 通用”的一类**。
 
-### 6.1 核心实现方式
+#### 核心实现方式
 
 - 仍然是 **内核态 Root**，但：
   - **不需要内核源码**
@@ -210,13 +210,13 @@ Magisk 把 Root 方式拉到了一个新高度。
     - 内核 hook（supercall / inline hook）  
     - 启动用户态守护/事件（[apd](cci:7://file:///c:/Users/Administrator/Documents/github/APatch/apd:0:0-0:0) 等）
 
-### 6.2 兼容性
+#### 兼容性
 
 - 内核版本范围广：**3.18 ~ 6.12**  
 - 不依赖 GKI，不要求厂商公开内核源码  
 - 对各家定制内核更友好（因为是直接对内核二进制镜像做符号分析与 patch）
 
-### 6.3 特点
+#### 特点
 
 1. **KPM 内核模块**：
    - 在已经被 kpimg 接管的内核里，动态加载 KPM 模块  
@@ -233,9 +233,9 @@ Magisk 把 Root 方式拉到了一个新高度。
 
 ---
 
-# 三、综合对比与结论
+## 三、综合对比与结论
 
-## 1. 技术路线对比（简表）
+### 技术路线对比（简表）
 
 | 方案      | 类型             | 是否改内核代码 | 是否需源码 | 是否依赖 App | su 角色                         | 模块系统            |
 |-----------|------------------|----------------|------------|--------------|----------------------------------|---------------------|
@@ -246,7 +246,7 @@ Magisk 把 Root 方式拉到了一个新高度。
 | KernelSU  | 内核 Root        | 是（源码/GKI/LKM）| 技术层面上需要 | App 非必须 | `/system/bin/su` 触发内核提权   | 元模块      |
 | APatch    | 内核 Root        | 是（kpimg patch）| 否       | App 非必须   | 内核 hook su/execve 等          | APM/KPM + Lua       |
 
-## 2. 目前最主流的三款root方案分析
+### 目前最主流的三款root方案分析
 
 - **Magisk**：  
   适合追求 **广泛兼容 + 成熟模块生态** 的用户，一般设备能解锁 boot.img 就能用。

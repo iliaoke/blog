@@ -43,7 +43,7 @@ tags:
    - [steamtool](https://www.steamtools.net) (闭源，国人大佬开发,功能强大)
    - [GreenLuma](https://cs.rin.ru/forum/viewtopic.php?t=103709)(原版纯命令行,操作较难,闭源,外国论坛发布)
    - [GreenLuma_CN](https://github.com/clinlx/CN_GreenLumaGUI)(原版加上前端，方便操作)
-   - [gbe_fork](https://github.com/Detanup01/gbe_fork)
+   
    
 
 ## 二是对游戏文件本身进行修改
@@ -54,7 +54,7 @@ tags:
    2. 无法使用steam官方客户端的一些功能
 
 ### 典型代表:
-   - [gbe_fork的steamclient模式](https://github.com/Detanup01/gbe_fork)
+   - [gbe_fork](https://github.com/Detanup01/gbe_fork)
    - [steam-auto-crak](https://github.com/SteamAutoCracks/Steam-auto-crack)
 
 ## 其他:

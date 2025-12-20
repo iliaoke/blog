@@ -73,7 +73,7 @@ tags:
   2. 直接询问客服是否可以在手机上通过steam客户端cdk激活（假入库的脚本程序无法在手机上运行）
 
 ## 解除假入库
-1. 使用[steam解锁文件管理器](https://cloud.ksmlc.cn/home?path=cloudreve%3A%2F%2FPDSB%40share)删除假入库的游戏
+1. 使用[steam解锁文件管理器](https://cloud.ksmlc.cn/home?path=cloudreve%3A%2F%2FPDSB%40share)删除假入库的游戏  
 ~~2. 然后删除steam根目录的hid.dll~~(steam更新64位后,hid.dll劫持的方案已经失效了,换别的方案了)
 
 ## **最后严肃声明，本文章仅供技术探讨，支持正版从我做起**

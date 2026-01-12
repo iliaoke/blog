@@ -58,3 +58,4 @@ menu:
 5. 一篇软路由推荐与分析blog
 6. 一篇ai使用感悟的blog
 7. 一篇hugo文章最后修改时间自动化的blog
+8. 一篇serverless方案使用推荐的blog

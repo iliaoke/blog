@@ -231,6 +231,8 @@ Magisk 把 Root 方式拉到了一个新高度。
    - 用 [tools/kallsym.c](cci:7://file:///c:/Users/Administrator/Documents/github/APatch/1/KernelPatch/tools/kallsym.c:0:0-0:0)、[tools/patch.c](cci:7://file:///c:/Users/Administrator/Documents/github/APatch/1/KernelPatch/tools/patch.c:0:0-0:0) 等做符号解析、patch  
    - 用 [kernel/patch/android/user_init.sh](cci:7://file:///c:/Users/Administrator/Documents/github/APatch/1/KernelPatch/kernel/patch/android/user_init.sh:0:0-0:0) 等把 apd 接到系统启动阶段
 
+4. 支持kernelsu的元模块挂载方案(2026.1.12补)
+
 ---
 
 ## 三、综合对比与结论

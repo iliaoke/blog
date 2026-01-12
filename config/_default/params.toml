@@ -109,7 +109,7 @@ serverURL = "https://comment.liaoke.xyz"
 lang = "zh-CN"
 visitor = ""
 avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
+emoji = ["https://unpkg.com/@waline/emojis@1.4.0/alus"]
 requiredMeta = ["name", "email", "url"]
 placeholder = ""
 

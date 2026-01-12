@@ -105,12 +105,12 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = "https://comment.liaoke.xyz"
+serverurl = "https://comment.liaoke.xyz"
 lang = "zh-CN"
 visitor = ""
 avatar = ""
-emoji = ["https://unpkg.com/@waline/emojis@1.4.0/alus"]
-requiredMeta = ["name", "email", "url"]
+emoji = ["https://unpkg.com/@waline/emojis@1.4.0/bilibili"]
+requiredmeta = ["name", "email", "url"]
 placeholder = ""
 
 [comments.waline.locale]

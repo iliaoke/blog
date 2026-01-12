@@ -59,3 +59,4 @@ menu:
 6. 一篇ai使用感悟的blog
 7. 一篇hugo文章最后修改时间自动化的blog
 8. 一篇serverless方案使用推荐的blog
+9. 一篇电脑bios破解方案分析的blog

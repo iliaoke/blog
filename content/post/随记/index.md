@@ -13,6 +13,9 @@ weight: 1
 ---
 ##  技术
 ***
+### 2026.01.12
+EvoltionX合并了[Android16 qpr2](https://github.com/Evolution-X/manifest)
+***
 ### 2025.12.20
 steam今天全面推64位了,steamtools等劫持steamworker api工具全部失效
 ***

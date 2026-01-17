@@ -62,3 +62,4 @@ menu:
 9. 一篇电脑bios破解方案分析的blog
 10. 一篇类原生系统推荐的blog
 11. 一篇serverless telegram AI聊天机器人的blog开发日志
+12. github student学生认证

@@ -49,4 +49,4 @@ tags:
 - 关键是还有破解版  
 - 可以一键解锁全部 VIP 功能  
 
-破解版下载地址：https://t.me/aprelmods
+破解版下载地址：[https://t.me/aprelmods](https://t.me/aprelmods)

@@ -56,7 +56,6 @@ menu:
 - 一篇vlanid的使用blog
 - 一篇软路由推荐与分析blog
 - 一篇ai使用感悟的blog
-- 一篇hugo文章最后修改时间自动化的blog
 - 一篇serverless方案使用推荐的blog
 - 一篇电脑bios破解方案分析的blog
 - 一篇类原生系统推荐的blog

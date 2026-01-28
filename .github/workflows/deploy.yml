@@ -1,9 +1,8 @@
 name: Build and deploy
-on:
+于:
   push:
-    branches:
-      - main
-      - master
+    分支:
+
   workflow_dispatch:
 permissions:
   contents: read

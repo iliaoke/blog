@@ -12,6 +12,16 @@
 
     {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}
+
+    <script type="module">
+      import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
+
+      pageviewCount({
+        serverURL: 'https://comment.liaoke.xyz',
+        path: window.location.pathname,
+        update: false,
+      });
+    </script>
 {{ end }}
 
 {{ define "right-sidebar" }}

@@ -1,6 +1,5 @@
 # Change baseurl before deploy
 baseurl = "https://blog.liaoke.xyz"
-languageCode = "zh-cn"
 title = "liaoke的blog"
 buildFuture = true
 enableGitInfo = true
@@ -8,7 +7,7 @@ math = true
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh"
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 hasCJKLanguage = true

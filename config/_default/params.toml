@@ -59,7 +59,7 @@ provider = "waline"
 [comments.waline]
         serverURL = "https://comment.liaoke.xyz"
         lang = "zh-CN"
-        pageview = "true"
+        pageview = true
         emoji = [
             "https://unpkg.com/@waline/emojis@1.4.0/weibo"
         ]

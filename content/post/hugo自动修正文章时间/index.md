@@ -1,5 +1,5 @@
 ---
-title: hugo自动修正文章最后的修改时间
+title: Hugo 小技巧：如何自动修正文章最后修改时间并保留历史记录
 description: hugo自动修正文章最后的修改时间
 date: 2026-01-25
 #image: cover.jpg

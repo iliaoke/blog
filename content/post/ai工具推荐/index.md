@@ -1,5 +1,5 @@
 ---
-title: AI IDE工具分析推荐
+title: AI 开发利器盘点：如何选择最适合你的 AI IDE 与扩展插件
 description: AI IDE工具分析推荐
 slug: ai-ide
 date: 2025-12-08

@@ -1,5 +1,5 @@
 ---
-title: Android root方案的发展与分析
+title: Android Root 的演进与抉择：多方案比较与实践建议
 description: Android root方案的发展与分析
 slug: Android-root
 date: 2025-12-09

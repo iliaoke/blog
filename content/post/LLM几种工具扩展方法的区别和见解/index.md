@@ -1,5 +1,5 @@
 ---
-title: LLM几种工具扩展方法的区别和见解
+title: 从实践到思考：我对几种LLM扩展工具的区别与使用心得
 description: LLM几种工具扩展方法的区别和见解
 date: 2026-02-02
 #image: cover.jpg

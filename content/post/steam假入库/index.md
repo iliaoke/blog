@@ -1,5 +1,5 @@
 ---
-title: 关于steam游戏假入库
+title: Steam 假入库那些事：风险、应对与我做过的测试
 description: 关于steam假入库的一些研究
 slug: steam
 date: 2025-12-03

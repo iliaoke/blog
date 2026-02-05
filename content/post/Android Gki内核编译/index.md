@@ -1,5 +1,5 @@
 ---
-title: Android Gki内核不完全编译指南
+title: GKI 内核不完全编译实战：常见问题、解决思路与经验总结
 description: Android Gki内核不完全编译指南
 slug: Android-kernel
 date: 2025-12-05

@@ -1,6 +1,6 @@
 ---
 title: GKI 内核不完全编译实战：常见问题、解决思路与经验总结
-description: Android Gki内核不完全编译指南
+description: "以 GKI 5.10+ 为例，记录 Android 内核“不完全编译”的完整流程：环境依赖、编译链选择、编译命令到 AnyKernel3 打包刷入，并附常见坑与排查思路。"
 slug: Android-kernel
 date: 2025-12-05
 #image: cover.jpg

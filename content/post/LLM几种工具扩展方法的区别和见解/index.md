@@ -1,6 +1,6 @@
 ---
 title: 从实践到思考：我对几种LLM扩展工具的区别与使用心得
-description: LLM几种工具扩展方法的区别和见解
+description: "从“LLM 只能决策不能执行”出发，对 Tool Calls、MCP、Skills 三种扩展方式的调用链路、桥接成本与上下文风险做对比，并给出适用场景与个人取舍。"
 date: 2026-02-02
 #image: cover.jpg
 categories:
@@ -10,6 +10,7 @@ tags:
     - Ai
     - 分析
 #weight: 1       
+
 ---
 
 # 关于LLM的几种工具扩展方法的区别和见解

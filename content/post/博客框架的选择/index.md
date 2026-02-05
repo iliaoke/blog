@@ -1,6 +1,6 @@
 ---
 title: 博客框架的选择
-description: 博客框架的选择指南
+description: "从静态博客与动态博客的架构差异出发，对资源占用、部署方式、运维成本与可扩展性做对比，并给出 WordPress/Typecho/Halo 与 Hexo/Hugo/Jekyll/Astro 等常见框架的选择建议。"
 slug: blog choose
 date: 2025-12-02
 #image: cover.jpg

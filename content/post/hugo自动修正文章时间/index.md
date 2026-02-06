@@ -1,6 +1,7 @@
 ---
 title: Hugo 小技巧：如何自动修正文章最后修改时间并保留历史记录
 description: "面向 Serverless/CI 自动部署场景，分析 Hugo 获取 lastmod 的几种方式（:filemodtime/:git/lastmod/date）的坑点，并给出“用 Git 提交时间回写文件时间戳 + :filemodtime”的稳定方案与脚本思路。"
+slug: hugo-add-lastmod-to-posts
 date: 2026-01-25
 #image: cover.jpg
 categories:

@@ -1,6 +1,7 @@
 ---
 title: 挑软件不踩雷：我常用的5款音乐播放与制作工具推荐
 description: 音乐软件推荐
+slug: music-software
 date: 2026-01-24
 #image: cover.jpg
 categories:

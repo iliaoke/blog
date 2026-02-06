@@ -1,5 +1,5 @@
 ---
-title: Steam 假入库那些事：风险、应对与我做过的测试
+title: Steam 假入库那些事：风险、应对
 description: "从 Steam 授权与清单文件机制出发，拆解“假入库”的实现思路（清单/密钥获取、Steamworks API 劫持等），对常见做法的局限与风险做说明，并给出辨别与处理建议。"
 slug: steam-fake-inventory
 date: 2025-12-03

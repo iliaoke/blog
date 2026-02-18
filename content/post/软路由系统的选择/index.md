@@ -42,7 +42,7 @@ tags:
 
 ### lede:
 
-准确来说是lean的lede,最原始的lede是openwrt里面分出来，后面又重新合并,而github上面的lede是lean(作者)基于最后的lede源代码的个人维护版本,也就是说基于的openwrt主线版本已经十分老旧了,这个系统的优点是有一些闭源驱动，性能非常强大,但由于已经和新版的openwrt代码相差很大，所以很多软件包已经不兼容了.
+准确来说是lean的lede,最原始的lede是openwrt里面分出来，后面又重新与openwrt合并,而github上面的lede是lean(作者)基于最后的lede源代码的个人维护版本,也就是说基于的openwrt主线版本已经十分老旧了,这个系统的优点是有一些闭源驱动，性能非常强大,但由于已经和新版的openwrt代码相差很大，所以很多软件包已经不兼容了.
 
 ### x-wrt:
 

@@ -1,5 +1,5 @@
 ---
-title: Android Root 的演进与抉择：多方案比较与实践建议
+title: Android Root 的演进与抉择
 description: "从技术路线与时间线梳理 Android Root 的演进：用户态/内核态/漏洞 Root 的差异与适用条件，并对 KingRoot、SuperSU、Magisk、KernelSU、APatch 等方案做原理拆解与优缺点对比，给出选择建议。"
 slug: Android-root
 date: 2025-12-09

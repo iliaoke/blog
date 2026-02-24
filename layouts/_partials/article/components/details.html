@@ -1,7 +1,9 @@
+{{- $IsList := .IsList -}}
+{{- $Page := .Page -}}
 <div class="article-details">
-    {{ if .Params.categories }}
+    {{ if $Page.Params.categories }}
     <header class="article-category">
-        {{ range (.GetTerms "categories") }}
+        {{ range ($Page.GetTerms "categories") }}
             {{ $color := partial "helper/color-from-str" .LinkTitle }}
             {{ $BackgroundColor := default $color.BackgroundColor .Params.style.background }}
             {{ $TextColor := default $color.TextColor .Params.style.color }}
@@ -14,30 +16,30 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="{{ .RelPermalink }}">
-                {{- .Title -}}
+            <a href="{{ $Page.RelPermalink }}">
+                {{- $Page.Title -}}
             </a>
         </h2>
     
-        {{ with .Params.description }}
+        {{ with $Page.Params.description }}
         <h3 class="article-subtitle">
             {{ . }}
         </h3>
         {{ end }}
     </div>
 
-    {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
-    {{ $showDate := not .Date.IsZero }}
+    {{ $showReadingTime := $Page.Params.readingTime | default ($Page.Site.Params.article.readingTime) }}
+    {{ $showDate := not $Page.Date.IsZero }}
     {{ $showFooter := or $showDate $showReadingTime }}
     {{ if $showFooter }}
     <footer class="article-time">
         {{ if $showDate }}
             <div>
                 {{ partial "helper/icon" "date" }}
-                <time class="article-time--published" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-                    {{- .Date | time.Format (or .Site.Params.dateFormat.published "2006年01月02日") -}}  
+                <time class="article-time--published" datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+                    {{- $Page.Date | time.Format (or $Page.Site.Params.dateFormat.published "2006年01月02日") -}}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.In "Asia/Shanghai" | time.Format ( or .Site.Params.dateFormat.lastUpdated "2006年01月02日" ) }}
+                    {{ T "article.lastUpdatedOn" }} {{ $Page.Lastmod | time.In "Asia/Shanghai" | time.Format (or $Page.Site.Params.dateFormat.lastUpdated "2006年01月02日") }}
                 </time>
             </div>
         {{ end }}
@@ -46,21 +48,32 @@
             <div>
                 {{ partial "helper/icon" "clock" }}
                 <time class="article-time--reading">
-                    {{ T "article.readingTime" .ReadingTime }},  共{{ .WordCount }}字
+                    {{ T "article.readingTime" $Page.ReadingTime }},  共{{ $Page.WordCount }}字
                 </time>
             </div>
         {{ end }}
-       
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg> 阅读量：<span class="waline-pageview-count" data-path="{{ .RelPermalink }}"></span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg> 阅读量：<span class="waline-pageview-count" data-path="{{ $Page.RelPermalink }}"></span>
     </footer>
     {{ end }}
 
-    {{ if .IsTranslated }}
+    {{ if $Page.IsTranslated }}
         <footer class="article-translations">
             {{ partial "helper/icon" "language" }}
             <div>
-                {{ range .Translations }}
+                {{ range $Page.Translations }}
                     <a href="{{ .RelPermalink }}" class="link">{{ .Language.LanguageName }}</a>
+                {{ end }}
+            </div>
+        </footer>
+    {{ end }}
+
+    {{ if and $Page.Site.Params.Article.List.ShowTags ($Page.GetTerms "tags") $IsList }}
+        <footer class="article-header-tags">
+            {{ partial "helper/icon" "tag" }}
+            <div>
+                {{ range ($Page.GetTerms "tags") }}
+                    <a href="{{ .RelPermalink }}" class="link">{{ .LinkTitle }}</a>
                 {{ end }}
             </div>
         </footer>

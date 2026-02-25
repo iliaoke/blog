@@ -13,6 +13,9 @@ weight: 1
 ---
 ##  技术
 ***
+### 2026.02.25
+immortalwrt主站已经快挂了一周了
+***
 ### 2026.01.12
 EvoltionX合并了[Android16 qpr2](https://github.com/Evolution-X/manifest)
 ***

@@ -17,7 +17,7 @@ weight: 1
 immortalwrt主站已经快挂了一周了
 ***
 ### 2026.01.12
-EvoltionX合并了[Android16 qpr2](https://github.com/Evolution-X/manifest)
+EvoltionX最先合并了[Android16 qpr2](https://github.com/Evolution-X/manifest)
 ***
 ### 2025.12.20
 steam今天全面推64位了,steamtools等劫持steamworker api工具全部失效
@@ -81,6 +81,9 @@ cloudflare ui界面更新了，感觉网站的寻找效率更高了
 
 ***
 ## 生活
+***
+### 2026.02.25
+和昨天一样，一下子把仙王的日常生活的后面两季看完了，不得不说，攒了几年的番，一个下午看完，真的是太爽了。到时候顺便把狐妖小红娘也给补了。
 ***
 ### 2026.02.24
 想当初刚看伍六七的时候还是初中，当时还只出了一两季。后面因为学习忙，就没怎么看。现在伍六七已经出到第5季了，感觉时间过得真快。一个下午把后面的剧情全给看完了，可惜第6季已经快一两年了，还没有出。

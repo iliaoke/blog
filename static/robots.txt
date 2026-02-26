@@ -1,4 +1,8 @@
 User-agent: *
-Allow: /
-
+Allow: /p/
+Disallow: /links/
+Disallow: /search/
+Disallow: /archives/
+Disallow: /tags/
+Disallow: /categories/
 Sitemap: https://blog.liaoke.xyz/sitemap.xml

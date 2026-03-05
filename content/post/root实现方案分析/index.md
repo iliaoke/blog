@@ -8,10 +8,9 @@ categories:
   - 技术
 tags:
   - Android
-  - 内核
   - Gki
   - root
-  - 分析
+  - 指南
 #weight: 1
 ---
 

@@ -25,7 +25,7 @@ tags:
 
 1. cmd+r运行**regedit**，打开注册表,
 2. 在`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}`里面有**一个或几个文件夹**（核显或者独显），
-3. 我们找到**文件夹**下面有英伟达标识字样的值的**文件夹**，在**文件夹**下面新建**DWORD**,名称**EnableGpuFirmware**,值为**1**,就可以成功打**gsp**了.
+3. 我们找到文件夹下面有**英伟达标识字样的值**的**文件夹**，在**对应文件夹**下面新建**DWORD**,名称**EnableGpuFirmware**,值为**1**,就可以成功打**gsp**了.
 4. 重新启动系统后，如果成功开启**gsp**,可以在PowerShell中输入 “`nvidia-smi -q`” 可显示固件版本.
 
 ![](1.png)

@@ -7,8 +7,7 @@ date: 2025-12-03
 categories:
     - 技术
 tags:
-    - steam
-    - steam假入库
+    - Steam
     - 游戏
 #weight: 1       
 ---

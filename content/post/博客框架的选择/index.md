@@ -7,7 +7,6 @@ date: 2025-12-02
 categories:
     - 技术
 tags:
-    - blog
     - 博客
     - 技术框架选型
 #weight: 1       

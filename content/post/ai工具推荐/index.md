@@ -7,10 +7,10 @@ date: 2025-12-08
 categories:
     - 技术
 tags:
-    - ai
+    - AI
     - ide
     - 分析
-    - 推荐
+ 
 #weight: 1       
 ---
 

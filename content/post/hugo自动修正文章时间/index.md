@@ -8,7 +8,7 @@ categories:
     - 技术
 tags:
     - hugo
-    - blog
+    - 博客
     - 解决方案
 #weight: 1       
 ---

@@ -7,8 +7,7 @@ date: 2026-02-02
 categories:
     - 技术
 tags:
-    - LLM
-    - Ai
+    - AI
     - 分析
 #weight: 1       
 

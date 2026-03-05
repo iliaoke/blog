@@ -8,10 +8,8 @@ categories:
     - 技术
     - 生活
 tags:
-    - Ai
-    - 个人思考
-    - LLM
-    - 随记
+    - AI
+    - 随笔
 #weight: 1       
 ---
 

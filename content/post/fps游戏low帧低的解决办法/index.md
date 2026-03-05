@@ -8,7 +8,7 @@ categories:
     - 技术
 tags:
     - 游戏
-    - steam
+    - Steam
     - 解决方案
 #weight: 1       
 ---

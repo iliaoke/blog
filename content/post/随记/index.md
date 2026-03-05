@@ -8,7 +8,7 @@ categories:
     - 技术
     - 生活
 tags:
-    - 随记
+    - 随笔
 weight: 1  
 ---
 ##  技术

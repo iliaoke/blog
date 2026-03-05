@@ -8,7 +8,7 @@ categories:
     - 技术
 tags:
     - AI
-    - ide
+    - IDE
     - 分析
  
 #weight: 1       

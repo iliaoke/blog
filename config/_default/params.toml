@@ -71,3 +71,11 @@ provider = "waline"
 [comments.waline.locale]
             admin = "Admin"
             placeholder = ""
+
+[imageProcessing]
+    [imageProcessing.content]
+        widths  = [800, 1600, 2400]
+        enabled = true
+
+    [imageProcessing.thumbnail]
+        enabled = true

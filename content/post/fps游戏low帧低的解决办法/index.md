@@ -1,7 +1,7 @@
 ---
 title: fps游戏low帧低的解决办法
-description: 
-slug: 
+description: 记录 FPS 游戏出现 low 帧/突发卡顿的排查与解决：通过注册表开启 NVIDIA GSP 固件缓解掉帧，并提供重启后用 nvidia-smi 验证的方法。
+slug: fps-game-low-frame
 date: 2026-03-04
 #image: cover.jpg
 categories:

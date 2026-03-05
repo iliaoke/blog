@@ -28,7 +28,7 @@ tags:
 3. 我们找到**文件夹**下面有英伟达标识字样的值的**文件夹**，在**文件夹**下面新建**DWORD**,名称**EnableGpuFirmware**,值为**1**,就可以成功打**gsp**了.
 4. 重新启动系统后，如果成功开启**gsp**,可以在PowerShell中输入 “`nvidia-smi -q`” 可显示固件版本.
 
-![](https://i2.hdslb.com/bfs/new_dyn/watermark/0ad57f08374a697a3efa554bd5a57c9a6535128.png)
+![](1.png)
 
 ---
 

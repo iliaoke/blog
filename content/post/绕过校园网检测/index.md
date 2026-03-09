@@ -1,7 +1,7 @@
 ---
 title: 绕过校园网热点检测
-description: 
-slug: 
+description: 通过 tun 虚拟网卡与网络共享手动指定热点上级网卡，绕过校园网热点设备数检测  
+slug: bypass-campus-wifi
 date: 2026-03-09
 #image: cover.jpg
 categories:

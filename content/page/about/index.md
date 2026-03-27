@@ -24,6 +24,7 @@ menu:
 ### 网络ip/web
 
 喜欢折腾软路由.熟练掌握openwrt,初步掌握网站搭建(nginx手动配置),会虚拟组网(zerotier,tailscale.easytier),初步掌握vlanid划分，单线复用。(可实现光猫在桥接的情况下，所有网口可用)，会ddns,端口转发,设计网络结构和服务。
+会一点网络逆向
 
 
 ### Android

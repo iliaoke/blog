@@ -24,7 +24,7 @@ menu:
 ### 网络ip/web
 
 喜欢折腾软路由.熟练掌握openwrt,初步掌握网站搭建(nginx手动配置),会虚拟组网(zerotier,tailscale.easytier),初步掌握vlanid划分，单线复用。(可实现光猫在桥接的情况下，所有网口可用)，会ddns,端口转发,设计网络结构和服务。
-会一点网络逆向
+**会一点网络逆向（成功逆向出Orchid的ai聊天接口并包装成openai格式的api）**
 
 
 ### Android
@@ -58,10 +58,7 @@ menu:
 
 ## 代办事项
 - 一篇Android系统编译的blog
-- 一篇vlanid的使用blog
-- 一篇ai使用感悟的blog
 - 一篇serverless方案使用推荐的blog
 - 一篇电脑bios破解方案分析的blog
-- 一篇类原生系统推荐的blog
 - github student学生认证
 - openrwrt attendedsysupgrade更换分支

@@ -18,7 +18,7 @@ jobs:
       contents: write
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -32,7 +32,7 @@ jobs:
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
 
-      - name: 提交更改
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "CI: Update theme"

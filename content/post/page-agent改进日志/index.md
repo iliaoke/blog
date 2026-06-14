@@ -13,7 +13,7 @@ tags:
 ---
 
 ## 前言
-有一次在[linux.do](https://linux.do)上逛的时候,发现了一个有趣的项目([page-agent](https://alibaba.github.io/page-agent/docs/introduction/quick-start)),可以用自然语言让ai控制网页，不需要传统的那种自动化网页方案，无头浏览器之类的。这个项目更简单易用，好上手。
+有一次在[linux.do](https://linux.do)上逛的时候,发现了一个有趣的项目([page-agent](https://alibaba.github.io/page-agent/docs/introduction/quick-start)),可以用自然语言让ai控制网页，不像传统的自动化网页方案，需要利用Python使用有头或者无头浏览器之类的。这个项目直接是作为js脚本，直接可以嵌入或hook在浏览器中,不需要依赖Python或者其他的东西,更简单易用，好上手。
 ![](1.png)
 ## 思考
 不过很可惜，原项目是完全基于网页dom文本化的操作方案，网页上的图片信息并不会输出在给ai的文本信息里面，也就是说无法识别网页图片，并且在在网页的文字识别上也加了很多限制，有时候有一些网站的有效信息无法被正常识别。于是乎我想研究一下，看一下能不能在原项目的基础上，让它支持识别图片，并且可以识别更多的网页文字。在经过几天的努力，也是终于把这两个问题给搞定了。

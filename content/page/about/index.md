@@ -59,6 +59,4 @@ menu:
 ## 代办事项
 - 一篇Android系统编译的blog
 - 一篇serverless方案使用推荐的blog
-- 一篇电脑bios破解方案分析的blog
-- github student学生认证
 - openrwrt attendedsysupgrade更换分支

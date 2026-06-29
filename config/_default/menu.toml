@@ -48,7 +48,7 @@ icon = "mail"
 identifier = "rss"
 weight = 999999
 name = "Rss"
-url = "https://blog.liaoke.xyz/index.xml"
+url = "https://blog.liao-ke.com/index.xml"
 
 [social.params]
 icon = "rss"

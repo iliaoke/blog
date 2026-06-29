@@ -57,7 +57,7 @@ provider = "waline"
     # Copy the configurations you need from there and paste it here.
 
 [comments.waline]
-        serverURL = "https://comment.liaoke.xyz"
+        serverURL = "https://comment.liao-ke.com"
         lang = "zh-CN"
         pageview = true
         emoji = [

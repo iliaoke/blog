@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://blog.liaoke.xyz"
+baseurl = "https://blog.liao-ke.com"
 title = "LiaoKE"
 buildFuture = true
 enableGitInfo = true

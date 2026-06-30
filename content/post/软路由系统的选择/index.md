@@ -1,5 +1,5 @@
 ---
-title: 2026年软路由系统分析和推荐
+title: 方案推荐 | 2026年软路由系统分析和推荐
 description: 2026年软路由系统分析和推荐，涵盖openwrt系、ikuai、RouterOS的对比与分支选择建议。
 slug: routeros-choose
 date: 2026-02-18

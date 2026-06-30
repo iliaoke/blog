@@ -1,5 +1,5 @@
 ---
-title: 代理工具的选择
+title: 方案推荐 | 代理工具的选择
 description: "从“代理核心 + GUI 前端”的视角，介绍并对比 Clash/Mihomo、Sing-Box、V2Ray、Xray、dae 等主流核心的特点与取舍，同时按系统整理常见客户端选择，便于快速完成选型。"
 slug: proxy-tools
 date: 2025-12-03

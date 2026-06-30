@@ -61,7 +61,7 @@ provider = "waline"
         lang = "zh-CN"
         pageview = true
         emoji = [
-            "https://unpkg.com/@waline/emojis@1.4.0/weibo"
+            "https://unpkg.com/@waline/emojis@1.4.0/bmoji","https://unpkg.com/@waline/emojis@1.4.0/qq"
         ]
         requiredMeta = [
             "name",

@@ -1,5 +1,5 @@
 ---
-title: Page-agent项目改进日志 | 开发日记
+title:开发日记 | Page-agent项目改进日志
 description: 
 slug: pageagent
 date: 2026-06-14    

@@ -1,5 +1,5 @@
 ---
-title:开发日记 | 用cloudflare worker实现telegram bot
+title: 开发日记 | 用cloudflare worker实现telegram bot
 description: 使用Cloudflare Worker和KV数据库实现带有记忆功能的Telegram聊天机器人，无需服务器即可部署AI对话功能 
 slug: cloudflare-worker-telegram-bot
 date: 2025-10-20

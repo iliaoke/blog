@@ -102,7 +102,7 @@ lastmod = [':fileModTime']
 ```
 git fetch --unshallow && chmod +x 1.sh && ./1.sh && hugo
 ```
-
+4. Serverless平台设置环境变量TZ为Asia/Shanghai(不然的话，一般Serverless平台默认应该是美国的时间,会影响构建出来的网站的文章的最后修改日期的准确性)
 这样就可以做到：
 
 - ✅ 修改时间与 Git 提交时间一致

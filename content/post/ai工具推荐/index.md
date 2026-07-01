@@ -14,9 +14,9 @@ tags:
 #weight: 1       
 ---
 
-# AI IDE 工具推荐
+## AI IDE 工具推荐
 
-## 为什么使用 AI IDE？
+### 为什么使用 AI IDE？
 
 - 传统 AI 聊天无法：
   - 实时读取本地文件
@@ -31,7 +31,7 @@ tags:
 
 ---
 
-## AI IDE 的能力评价指标
+### AI IDE 的能力评价指标
 
 1. **硬实力：自带模型能力**  
 2. **软实力：上下文补全与逻辑能力**  
@@ -40,9 +40,9 @@ tags:
 
 ---
 
-## AI 编程工具分类
+### AI 编程工具分类
 
-### 1. CLI 命令行AI开发工具
+#### 1. CLI 命令行AI开发工具
 - 开发效率比 IDE 差
   - 文件引用需手动输入
 - 不适合宏观项目管理
@@ -52,13 +52,13 @@ tags:
   - [Claude Code★★★](https://claude.com/product/claude-code)(也有vscode 插件版本,但开发效率不如集成式ai ide,仍然是片段式更改)
   - [OpenCode（开源）](https://github.com/sst/opencode)（可自定义服务商接口，但上下文能力较弱）
 
-### 2. IDE AI 开发工具
+#### 2. IDE AI 开发工具
 - 直接从文件管理器拖入文件即可
 - 支持项目级宏观管理
 
 ---
 
-## 国内 AI IDE
+### 国内 AI IDE
 
 - **[Trae](https://www.trae.ai/)**
   - 特有 Solo 模式（和普通模式感觉主要是 UI 差别，在功能上感觉差的不是很大，可能隐藏 prompt 有所优化）
@@ -71,14 +71,14 @@ tags:
   - 无特色
   - 无法使用国外模型或其他接口
 
-### 国内 IDE 的共性
+#### 国内 IDE 的共性
 - 喜欢构建工作区文件全量索引，每次提问前先查索引文件，消耗大量上下文 token，有时查找的文件过多反而忽略关键问题
 - 国内模型编码能力较弱，且不允许使用国外更强的模型
 - 方便支付订阅, 界面中文支持较好
 
 ---
 
-## 国外 AI IDE
+### 国外 AI IDE
 
 - **[GitHub Copilot★★](https://github.com/features/copilot)**
   - VSCode 插件形式
@@ -131,7 +131,7 @@ tags:
 
 ---
 
-## 总结推荐
+### 总结推荐
 
 - 综合价格、模型能力和上下文补全能力，我个人首推 **[Windsurf](https://windsurf.ai/)**  
 - DeepWiki、CodeMap 和消息互通是其最大亮点，让其上下文补全能力非常强大  

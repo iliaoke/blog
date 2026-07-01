@@ -5,7 +5,7 @@ slug: openwrt-vlan
 date: 2026-02-25
 #image: cover.jpg
 categories:
-    - 技术
+    - 学习笔记
 tags:
     - 软路由
     - 指南

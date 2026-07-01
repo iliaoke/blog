@@ -5,9 +5,8 @@ slug: cloudflare-worker-telegram-bot
 date: 2025-10-20
 #image: cover.jpg
 categories:
-    - 技术
-tags:
     - 开发日记
+tags:
     - 指南
 #weight: 1       
 ---

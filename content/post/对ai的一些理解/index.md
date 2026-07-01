@@ -1,15 +1,13 @@
 ---
-title: 技术感悟 | 谈谈我对AI的一些理解
+title: 随笔杂谈 | 谈谈我对AI的一些理解
 description: 结合个人使用大模型的经历，聊聊我对AI的理解：AI是提升效率的工具而非核心，关键在于掌握AI而不是依赖AI。
 slug: ai-understanding
 date: 2025-12-09
 #image: cover.jpg
 categories:
-    - 技术
-    - 生活
+    - 随笔杂谈
 tags:
     - AI
-    - 随笔
 #weight: 1       
 ---
 

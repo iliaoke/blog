@@ -5,9 +5,8 @@ slug: pageagent
 date: 2026-06-14    
 #image: cover.jpg
 categories:
-    - 技术
-tags:
     - 开发日记
+tags:
     - AI
 #weight: 1       
 ---

@@ -5,7 +5,7 @@ slug: android-gki-kernel-compile
 date: 2025-12-05
 #image: cover.jpg
 categories:
-    - 技术
+    - 学习笔记
 tags:
     - Android
     - 内核

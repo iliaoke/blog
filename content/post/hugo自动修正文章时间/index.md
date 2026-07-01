@@ -5,7 +5,7 @@ slug: hugo-add-lastmod-to-posts
 date: 2026-01-25
 #image: cover.jpg
 categories:
-    - 技术
+    - 学习笔记
 tags:
     - hugo
     - 博客

@@ -1,11 +1,11 @@
 ---
-title: 方案推荐 | 如何选择最适合你的 AI IDE 与扩展插件
+title: 方案分析 | 如何选择最适合你的 AI IDE 与扩展插件
 description: "从使用场景与评价指标出发，梳理 CLI/IDE 两类 AI 编程工具，并对比国内外主流 AI IDE 的特点、限制与适用人群，给出个人的选型建议与推荐。"
 slug: ai-ide
 date: 2025-12-08
 #image: cover.jpg
 categories:
-    - 技术
+    - 方案分析
 tags:
     - AI
     - IDE

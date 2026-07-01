@@ -5,7 +5,7 @@ slug: steam-fake-inventory
 date: 2025-12-03
 #image: cover.jpg
 categories:
-    - 技术
+    - 学习笔记
 tags:
     - Steam
     - 游戏

@@ -58,4 +58,3 @@ menu:
 
 ## 代办事项
 - 一篇Android系统编译的blog
-- openrwrt attendedsysupgrade更换分支

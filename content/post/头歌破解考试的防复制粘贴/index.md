@@ -131,7 +131,7 @@ function handleIframe(iframe) {
   log("v3.0.1 启动");
 
   // ═══════════════════════════════════════════════════════════
-  // 工具函数
+  // Tools
   // ═══════════════════════════════════════════════════════════
 
   function insideMonaco(el) {
@@ -139,26 +139,6 @@ function handleIframe(iframe) {
     return !!el.closest(".monaco-editor");
   }
 
-  // ═══════════════════════════════════════════════════════════
-  // 核心策略（v3.0.1 最终版）
-  //
-  //   ┌───────────┬──────────────────┬────────────────┬──────────────────────┐
-  //   │  事件      │ preventDefault   │ stopPropagation │ 效果                 │
-  //   ├───────────┼──────────────────┼────────────────┼──────────────────────┤
-  //   │ paste     │ 保留原始 ✓       │ 中和 ✗          │ 事件到达 textarea     │
-  //   │           │                  │                │ → Monaco 格式化粘贴   │
-  //   ├───────────┼──────────────────┼────────────────┼──────────────────────┤
-  //   │ context   │ 保留原始 ✓       │ 中和 ✗          │ 浏览器菜单被阻止      │
-  //   │ menu      │                  │                │ Monaco 菜单正常弹出    │
-  //   ├───────────┼──────────────────┼────────────────┼──────────────────────┤
-  //   │ copy/cut  │ 中和 ✗           │ 中和 ✗          │ 完全恢复              │
-  //   └───────────┴──────────────────┴────────────────┴──────────────────────┘
-  //
-  // 关键区别：contextmenu 保留 preventDefault
-  //   Monaco 的右键菜单是 JS 自定义渲染的（不是浏览器原生菜单），
-  //   只要事件能到达 Monaco 的 handler 就会弹出。
-  //   preventDefault 只阻止浏览器原生菜单，不影响 Monaco 自定义菜单。
-  // ═══════════════════════════════════════════════════════════
 
   const _origPreventDefault = Event.prototype.preventDefault;
   const _origStopPropagation = Event.prototype.stopPropagation;
@@ -166,10 +146,6 @@ function handleIframe(iframe) {
 
   Event.prototype.preventDefault = function () {
     const t = this.type;
-    // 只对 copy/cut 中和 preventDefault（它们不需要浏览器的默认行为）
-    // paste 和 contextmenu 保留原始逻辑：
-    //   - paste: 网站阻止浏览器默认 paste（正确，避免格式错乱）
-    //   - contextmenu: 网站阻止浏览器原生右键菜单（正确，避免双重菜单）
     if ((t === "copy" || t === "cut") && insideMonaco(this.target)) {
       return;
     }
@@ -179,7 +155,7 @@ function handleIframe(iframe) {
   Event.prototype.stopPropagation = function () {
     const t = this.type;
     if ((t === "paste" || t === "contextmenu" || t === "copy" || t === "cut") && insideMonaco(this.target)) {
-      return; // 放行，让事件继续传播到 Monaco 的 handler
+      return;
     }
     return _origStopPropagation.call(this);
   };
@@ -187,7 +163,7 @@ function handleIframe(iframe) {
   Event.prototype.stopImmediatePropagation = function () {
     const t = this.type;
     if ((t === "paste" || t === "contextmenu" || t === "copy" || t === "cut") && insideMonaco(this.target)) {
-      return; // 放行
+      return; 
     }
     return _origStopImmediate.call(this);
   };
@@ -203,8 +179,7 @@ function handleIframe(iframe) {
 
   document.addEventListener("paste", function (e) {
     if (!insideMonaco(e.target)) return;
-    // 确保浏览器默认 paste 被阻止（即使网站没调 preventDefault）
-    // 让 Monaco 的 paste handler 接管
+  
     e.preventDefault();
   }, true);
 

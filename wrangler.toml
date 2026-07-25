@@ -1,5 +1,9 @@
 name = "blog1"
 compatibility_date = "2026-07-25"
 
+[vars]
+HUGO_VERSION = "0.164.0"
+TZ = "Asia/Shanghai"
+
 [assets]
 directory = "./public"

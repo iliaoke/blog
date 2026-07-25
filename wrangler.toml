@@ -7,3 +7,14 @@ TZ = "Asia/Shanghai"
 
 [assets]
 directory = "./public"
+
+[observability]
+enabled = true          # 总开关必须是 true，下面的子配置才会生效
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+
+[observability.traces]
+enabled = true          # 你现在确实不需要traces，关掉没问题

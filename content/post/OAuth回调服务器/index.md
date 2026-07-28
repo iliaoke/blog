@@ -49,7 +49,7 @@ function redirectToApp(env, params) {
 ## 后记
 弄完之后，才发现其实连服务器都不需要,浏览器是支持输入应用app scheme的,在浏览器通过这个跳转到应用内部，让应用接收code，然后在应用内部实现code转access token的过程。不过这样的话，就得把客户端id和客户端密钥写进应用内部，如果被人反编译出来，就会有密钥泄露的风险。而且如果是设计更复杂的应用，涉及到第三方账号的绑定，数据库的查询读写，这些操作都应该放到云端认证回调服务器上去执行，而不应该放在本地客户端里面。把认证回调服务器写成本地APP scheme这种方案只能临时用于没有服务器的情况，不能放在正式的生产环境。
 
-
+## index.js
 ```js
 /**
  * GitHub OAuth 回调 Worker（简化版，仅用于拿到 access_token）
@@ -220,6 +220,7 @@ function redirectToApp(env, params) {
 }
 ```
 
+## wrangler.toml
 ```toml
 name = 'oauth-woker'
 main = "index.js"

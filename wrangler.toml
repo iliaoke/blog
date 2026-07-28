@@ -7,3 +7,5 @@ TZ = "Asia/Shanghai"
 
 [assets]
 directory = "./public"
+
+

@@ -21,7 +21,7 @@ tags:
 
 ### 用 Chaquopy 把 Python 塞进安卓
 
-这个项目是基于Python的，于是我便利用了[**chaquopy**](https://chaquo.com/chaquopy)这个嵌入式Python运行器(因为安卓上没有runtime这个概念,不像windows一样可以装Python运行环境，安卓应用只能使用嵌入式python来运行python代码,不过[**chaquopy**](https://chaquo.com/chaquopy)他的Python依赖库不全，而且有些版本有点落后,出现了项目的语法兼容性问题。为了让[**chaquopy**](https://chaquo.com/chaquopy)兼容[**Open-AutoGLM**](https://github.com/zai-org/Open-AutoGLM),当时调试依赖版本，就费了好长的时间)。在 `build.gradle.kts` 里接入：
+这个项目是基于Python的，于是我便利用了[**chaquopy**](https://chaquo.com/chaquopy)这个嵌入式Python运行器(因为安卓上没有runtime这个概念,不像windows一样可以装Python运行环境，安卓应用只能使用嵌入式python来运行python代码,且[**chaquopy**](https://chaquo.com/chaquopy)他的Python依赖库不全，而且有些版本有点落后,出现了项目的语法兼容性问题。为了让[**chaquopy**](https://chaquo.com/chaquopy)兼容[**Open-AutoGLM**](https://github.com/zai-org/Open-AutoGLM),当时调试依赖版本，就费了好长的时间)。在 `build.gradle.kts` 里接入：
 
 ``` kotlin
 plugins {

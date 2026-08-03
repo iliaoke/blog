@@ -1,5 +1,5 @@
 ---
-title: 我的第一个开源 PR：适配 APatch 的 gbl_root_canoe 兼容性修复
+title: 随笔杂谈 | 我的第一个开源 PR：适配 APatch 的 gbl_root_canoe 兼容性修复
 description: 记录在一加15T上折腾ESP分区漏洞Root方案时，发现模块在APatch上WebUI初始化失败的问题，通过阅读源码定位原因并提交修复，完成了自己的第一个开源项目Pull Request。
 slug: first-open-source-pr
 date: 2026-05-24

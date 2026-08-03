@@ -1,6 +1,8 @@
 ---
-title: 链接
+title: 友链
 slug: "links"
+readingTime: false
+license: false
 links:
   - title: 开往
     description: 开往是一个友链接力项目，通过随机跳转的方式为独立站点引流，推动网络的开放与多元，目前已有 1k+ 网站加入。

@@ -17,9 +17,10 @@ menu:
 
 - **Python**: 初三花了一个月啃下了一整本python语法书
 - **C/C++**: 大学课程😭
-- **javascript**: serverless服务狂喜（写过一个带上下文储存的telegram ai聊天bot）
+- **javascript**: serverless服务狂喜（写过一个带上下文储存的telegram ai聊天bot和OAuth回调服务器）
 - **shell**: 写点小脚本
 - **dart**: 基本与flutter搭配使用（flutter的跨平台build功能很强）
+- **kotlin**: 用于Android应用开发
 
 ### 网络ip/web
 
@@ -32,7 +33,7 @@ menu:
 1. 熟练掌握root方案(magisk,kernelsu,apatch),并初步了解他们的技术实现原理与区别。
 2. Android kernel的编译与patch
 3. 初步掌握Android系统(Lineageos,crdroid,risingos......)的编译(但是出bug了不会修),32+1tb的运存储存规模有点不太够用了(现在内存储存涨价太多，目前不适合入手)
-
+4. 初步掌握Android应用开发
 ### Windows/Linux
 
 1. 了解各种系统uefi引导流程，熟悉构建多系统（windows/linux/fydeos/android x86）引导
